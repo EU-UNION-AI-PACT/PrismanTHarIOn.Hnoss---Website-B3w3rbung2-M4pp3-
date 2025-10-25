@@ -1,0 +1,917 @@
+<!DOCTYPE html>
+<html lang="de" style="scroll-behavior: smooth;"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <!-- Navigation System -->
+  <link rel="preconnect" href="https://fonts.googleapis.com/">
+  <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="">
+  <link href="Peace20Diplomacy2020Technology2020EX2025D12183102020_data/css2.css" rel="stylesheet">
+  <script src="Peace20Diplomacy2020Technology2020EX2025D12183102020_data/navigation.js" defer="defer"></script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Peace Diplomacy &amp; Technology · EX2025D1218310 — Daniel Pohl (Complete Unified Edition)</title>
+<meta name="description" content="Complete Unified Multi-Level Edition - All Original Content with Star-Sparkle Navigation">
+
+<style>
+  /* Complete Unified Edition CSS */
+  :root{
+    --bg:#05060a;--panel:#0b1220cc;--ink:#e7fbff;--muted:#a8d5df;--accent:#00f0ff;--gold:#ffd700;
+    --chip:#103046a6;--card:#0f172acc;--link:#7ee0ff;--shadow:0 12px 40px rgba(0,0,0,.35);--radius:20px;
+    --ease-soft:cubic-bezier(.22,1,.36,1);--ease-spring:cubic-bezier(.15,1.1,.3,1);
+    --silver:#c0c0c0;--silver-strong:rgba(255,255,255,.9);
+  }
+  *,*::before,*::after{box-sizing:border-box}
+  html,body{margin:0;height:100%;color:var(--ink);background:var(--bg);font:500 16px/1.6 system-ui,-apple-system,Segoe UI,Roboto,"Helvetica Neue",Inter,Ubuntu,Cantarell,Noto Sans,Arial,"Apple Color Emoji","Segoe UI Emoji";scroll-behavior:smooth;text-rendering:optimizeLegibility;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+  a{color:var(--link);text-decoration:none;transition:color .25s var(--ease-soft), text-shadow .35s var(--ease-soft)}
+  a:hover{color:#baf0ff;text-shadow:0 0 8px rgba(126,224,255,.35)}
+
+  /* Layout */
+  .app{position:relative;min-height:100vh;z-index:3;overflow-x:hidden;max-width:100vw}
+  
+  /* Multi-Level Navigation */
+  .level-nav{position:fixed;top:0;left:0;right:0;z-index:10;background:linear-gradient(180deg, rgba(2,10,18,.95), rgba(2,10,18,.75));border-bottom:2px solid rgba(126,224,255,.25);backdrop-filter:blur(10px)}
+  .level-nav-inner{max-width:1200px;margin:0 auto;padding:8px 16px;display:flex;gap:12px;align-items:center;flex-wrap:wrap}
+  .brand{font-weight:800;letter-spacing:.02em;font-size:clamp(14px,2.2vw,18px);margin-right:auto}
+  .brand small{display:block;font-weight:600;color:var(--muted);font-size:.8em}
+  
+  /* Level Tabs */
+  .level-tabs{display:flex;gap:6px;flex-wrap:wrap}
+  .level-tab{padding:8px 16px;border:1px solid rgba(126,224,255,.3);background:linear-gradient(180deg, rgba(14,44,66,.6), rgba(10,30,46,.4));border-radius:999px;transition:all .35s var(--ease-soft);cursor:pointer;font-weight:600;font-size:.9em;color:var(--ink);position:relative}
+  .level-tab.active{background:linear-gradient(135deg,var(--gold),var(--accent));color:#0a1220;border-color:var(--gold);text-shadow:none;font-weight:800}
+  .level-tab:hover:not(.active){transform:translateY(-1px);box-shadow:0 8px 20px rgba(126,224,255,.2);background:linear-gradient(180deg, rgba(14,44,66,.8), rgba(10,30,46,.6));color:#baf0ff}
+  .level-tab.star-sparkle{color:transparent!important;background:linear-gradient(135deg,var(--gold),var(--accent),var(--gold));-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent}
+  .level-tab.star-sparkle.active{background:linear-gradient(135deg,var(--gold),var(--accent));color:#0a1220;-webkit-text-fill-color:#0a1220}
+  
+  /* Section Navigation within levels */
+  .section-nav{position:sticky;top:70px;z-index:9;background:linear-gradient(180deg, rgba(5,15,25,.9), rgba(5,15,25,.7));border-bottom:1px solid rgba(126,224,255,.15);margin-bottom:20px}
+  .section-nav-inner{max-width:1200px;margin:0 auto;padding:8px 16px}
+  .section-tabs{display:flex;gap:8px;flex-wrap:wrap}
+  .section-tab{padding:6px 12px;border:1px solid rgba(126,224,255,.4);background:linear-gradient(180deg, rgba(14,44,66,.5), rgba(10,30,46,.4));border-radius:999px;transition:all .35s var(--ease-soft);cursor:pointer;font-size:.85em;color:var(--ink);font-weight:500}
+  .section-tab.active{background:linear-gradient(135deg,rgba(126,224,255,.3),rgba(0,240,255,.2));border-color:var(--accent);color:var(--ink);font-weight:700;box-shadow:0 4px 12px rgba(126,224,255,.2)}
+  .section-tab:hover:not(.active){transform:translateY(-1px);background:linear-gradient(180deg, rgba(14,44,66,.7), rgba(10,30,46,.6));color:#baf0ff;border-color:rgba(126,224,255,.6)}
+
+  /* Star-Sparkle Animation */
+  .star-sparkle{position:relative;background:linear-gradient(135deg,var(--gold),var(--accent),var(--gold));-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;text-shadow:0 0 12px rgba(255,215,0,.8),0 0 24px rgba(126,224,255,.5);animation:starSparkle 2.5s ease-in-out infinite alternate;transition:all .35s var(--ease-soft)}
+  @keyframes starSparkle{0%{text-shadow:0 0 12px rgba(255,215,0,.8),0 0 24px rgba(126,224,255,.5);filter:brightness(1)}50%{text-shadow:0 0 20px rgba(255,215,0,1),0 0 40px rgba(126,224,255,.8);filter:brightness(1.3)}100%{text-shadow:0 0 16px rgba(255,215,0,.9),0 0 32px rgba(126,224,255,.6);filter:brightness(1.1)}}
+  @keyframes twinkleLeft{0%{transform:translateY(-50%) scale(1);opacity:.8}50%{transform:translateY(-50%) scale(1.2);opacity:1}100%{transform:translateY(-50%) scale(.9);opacity:.7}}
+  @keyframes twinkleRight{0%{transform:translateY(-50%) scale(.9);opacity:.9}50%{transform:translateY(-50%) scale(1.3);opacity:1}100%{transform:translateY(-50%) scale(1);opacity:.8}}
+  
+  /* Level-Tab Emojis */
+  .level-tab.star-sparkle::before{content:"✨";position:absolute;left:-18px;top:50%;transform:translateY(-50%);animation:twinkleLeft 3s ease-in-out infinite alternate;opacity:.8;font-size:1em}
+  .level-tab.star-sparkle::after{content:"⭐";position:absolute;right:-18px;top:50%;transform:translateY(-50%);animation:twinkleRight 2.8s ease-in-out infinite alternate;opacity:.9;font-size:1em}
+
+  /* Content Areas */
+  .level-content{margin-top:70px;padding:20px 16px;max-width:1200px;margin-left:auto;margin-right:auto}
+  .hero{position:relative;z-index:4;max-width:1200px;margin:0 auto;padding:min(12vh,120px) 16px 32px}
+  .hero h1{margin:0 0 clamp(6px,1.5vw,12px);font-size:clamp(24px,5.5vw,56px);line-height:1.05;letter-spacing:.01em;max-width:100%;word-break:break-word;
+    text-shadow:0 0 10px var(--gold),0 0 25px rgba(255,215,0,.65),0 0 50px var(--gold);
+    background:linear-gradient(135deg,var(--ink),var(--gold),var(--accent));
+    -webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent}
+  .hero p.lead{margin:6px 0 0;color:var(--muted);font-size:clamp(16px,2.6vw,20px)}
+  
+  .chips{display:flex;flex-wrap:wrap;gap:8px;margin:16px 0 0}
+  .chip{display:inline-flex;align-items:center;gap:8px;padding:8px 12px;border-radius:999px;background:var(--chip);border:1px solid rgba(126,224,255,.2);box-shadow:var(--shadow);transition:transform .5s var(--ease-spring), background .35s var(--ease-soft), border-color .35s var(--ease-soft)}
+  .chip:hover{transform:translateY(-2px)}
+
+  .grid{position:relative;z-index:10;max-width:min(1200px,95vw);margin:0 auto;padding:clamp(12px,3vw,24px);display:grid;gap:clamp(12px,3vw,24px);grid-template-columns:repeat(12,1fr);width:100%;box-sizing:border-box;opacity:1;visibility:visible}
+  .card{grid-column:span 12;background:var(--panel);border:1px solid rgba(126,224,255,.15);border-radius:clamp(12px,2vw,20px);box-shadow:var(--shadow);transform:translateY(8px) scale(.995);opacity:0;transition:transform .9s var(--ease-soft), opacity .9s var(--ease-soft), box-shadow .5s var(--ease-soft);position:relative;overflow:visible;max-width:100%;box-sizing:border-box;margin-bottom:clamp(8px,2vw,16px);z-index:5}
+  .card.reveal{opacity:1;transform:translateY(0) scale(1);visibility:visible;display:block}
+  .card:hover{box-shadow:0 18px 60px rgba(0,0,0,.45)}
+  .card h2{margin:0;font-size:clamp(16px,3.5vw,24px);max-width:100%;word-break:break-word}
+  .card .hd{display:flex;align-items:center;justify-content:space-between;padding:clamp(12px,2.5vw,20px);border-bottom:1px solid rgba(126,224,255,.12);background:linear-gradient(180deg, rgba(16,30,46,.35), rgba(10,22,36,.25));flex-wrap:wrap;gap:clamp(6px,1.5vw,12px)}
+  .card .bd{padding:clamp(12px,3vw,24px);overflow-x:auto;word-wrap:break-word;overflow-wrap:break-word;max-width:100%;box-sizing:border-box}
+  .card .hd h2{background:linear-gradient(135deg,var(--ink),var(--gold));-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent}
+
+  /* Hintergrund */
+  #fx{position:fixed;inset:0;z-index:0;display:block;width:100vw;height:100vh;background:radial-gradient(1200px 800px at 70% 20%, rgba(0,180,255,.08), transparent 60%),radial-gradient(900px 700px at 10% 90%, rgba(255,200,0,.07), transparent 60%);animation:drift 42s linear infinite alternate}
+  @keyframes drift{0%{background-position:70% 20%,10% 90%}100%{background-position:68% 18%,12% 88%}}
+
+  /* Matrix Layer */
+  #matrix{position:fixed;inset:0;z-index:2;width:100vw;height:100vh;mix-blend-mode:normal;opacity:0.6;display:block;pointer-events:none;background:transparent}
+
+  /* Holografisches Sigil */
+  #sigil{position:fixed;inset:0;z-index:1;width:100vw;height:100vh;pointer-events:none;mix-blend-mode:screen;transform:translate3d(0,0,0);will-change:transform}
+  #sigil .holo{fill:none;stroke:rgba(0,255,255,.78);stroke-width:1.25;stroke-linecap:round;stroke-linejoin:round;vector-effect:non-scaling-stroke}
+  #sigil .strong{stroke-width:1.6}
+  #sigil .dim{stroke:rgba(150,255,255,.55)}
+  #sigil .twinkle{animation:twinkle 4.2s ease-in-out infinite alternate}
+  #sigil .orb{animation:orb 80s linear infinite}
+  #sigil .dash{stroke-dasharray:140 10;animation:dash 18s linear infinite}
+  #sigil .gold{stroke:rgba(255,215,0,.9)}
+  #sigil .gold.dim{stroke:rgba(255,230,150,.72)}
+  #sigil .goldGlow{animation:goldglow 7s ease-in-out infinite alternate}
+  @keyframes goldglow{0%{opacity:.75}100%{opacity:1}}
+  @keyframes dash{to{stroke-dashoffset:-300}}
+  @keyframes twinkle{0%{opacity:.65}50%{opacity:1}100%{opacity:.6}}
+  @keyframes orb{to{transform:rotate(360deg)}}
+
+  /* Gold Highlights */
+  .gold-highlight{color:var(--gold);text-shadow:0 0 8px rgba(255,215,0,.6)}
+
+  /* Utilities */
+  .cols{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}
+  @media (max-width:900px){.cols{grid-template-columns:1fr}}
+  .manifest-grid{display:grid;gap:clamp(20px,5vw,32px);grid-template-columns:repeat(auto-fit,minmax(min(320px,100%),1fr));box-sizing:border-box;padding:clamp(8px,2vw,16px);margin:clamp(16px,4vw,24px) 0}
+  .manifest-grid>div{position:relative;padding:clamp(20px,5vw,32px);border-radius:clamp(14px,3.5vw,22px);background:linear-gradient(160deg,rgba(16,30,46,.88),rgba(8,16,28,.75));border:1px solid rgba(126,224,255,.3);box-shadow:0 20px 45px rgba(0,0,0,.45);overflow:visible;transition:transform .5s var(--ease-spring),box-shadow .5s var(--ease-soft);margin:0 0 clamp(16px,4vw,24px) 0;box-sizing:border-box;max-width:100%;min-height:auto;word-wrap:break-word;overflow-wrap:break-word}
+  .manifest-grid>div:hover{transform:translateY(-6px);box-shadow:0 28px 65px rgba(0,0,0,.55)}
+  
+  dl{display:grid;grid-template-columns:max(clamp(130px,22vw,190px),28%) 1fr;gap:clamp(8px,2vw,14px) clamp(14px,3.5vw,22px);margin:clamp(12px,3vw,18px) 0;align-items:start;box-sizing:border-box;line-height:1.6}
+  dt{color:var(--muted);font-weight:600;word-wrap:break-word}
+  dd{margin:0;word-wrap:break-word;line-height:1.5}
+  .taglist{display:flex;flex-wrap:wrap;gap:clamp(6px,1.5vw,10px);margin:clamp(8px,2vw,12px) 0}
+  .tag{background:#0b2330;border:1px dashed rgba(126,224,255,.35);padding:clamp(6px,1.5vw,10px) clamp(8px,2vw,14px);border-radius:999px;font-size:clamp(0.88em,1.8vw,0.95em);line-height:1.4;word-wrap:break-word;max-width:100%;box-sizing:border-box}
+  .meta{display:flex;flex-wrap:wrap;gap:clamp(8px,2vw,12px);color:var(--muted);font-size:clamp(0.86em,1.7vw,0.92em);margin:clamp(6px,1.5vw,10px) 0;line-height:1.5}
+
+  /* Scroll-Progress-Leiste */
+  .scrollbar{position:fixed;inset:0 auto auto 0;height:3px;width:0;background:linear-gradient(90deg,#7ee0ff,#ffd86b);z-index:10;box-shadow:0 2px 10px rgba(0,0,0,.3)}
+
+  /* Responsive */
+  @media (max-width:768px){
+    .level-nav-inner{flex-direction:column;align-items:flex-start;gap:8px}
+    .brand{margin-right:0;margin-bottom:8px}
+    .level-tabs{justify-content:center;width:100%}
+    .section-tabs{justify-content:center}
+    .level-content{padding:10px}
+    .grid{max-width:calc(100vw - 20px);padding:clamp(8px,2vw,16px);gap:clamp(8px,2vw,16px)}
+    .card .hd{flex-direction:column;align-items:flex-start;gap:clamp(4px,1vw,8px)}
+    .card .bd{padding:clamp(8px,2vw,16px)}
+    .manifest-grid{grid-template-columns:1fr;gap:clamp(16px,4vw,24px)}
+    dl{grid-template-columns:1fr;gap:clamp(6px,1.5vw,10px)}
+  }
+  @media (max-width:480px){
+    .grid{max-width:calc(100vw - 16px);padding:clamp(6px,1.5vw,12px);gap:clamp(6px,1.5vw,12px)}
+    .card .bd{padding:clamp(6px,1.5vw,12px)}
+    .manifest-grid{gap:clamp(12px,3vw,20px)}
+    .manifest-grid>div{padding:clamp(12px,3vw,16px);border-radius:clamp(8px,2vw,12px)}
+  }
+
+  /* Reduced motion */
+  @media (prefers-reduced-motion:reduce){*{animation:none !important;transition:none !important}}
+  
+  /* Print */
+  @media print{#matrix,#fx,.toolbar,.level-nav{display:none!important}.nav{position:static;background:#fff;color:#000}body{background:#fff;color:#000}.card{border:1px solid #aaa}}
+</style>
+<style>
+            .global-nav {
+                position: fixed;
+                top: 0;
+                left: 0;
+                right: 0;
+                background: linear-gradient(180deg, rgba(5, 6, 10, 0.95), rgba(5, 6, 10, 0.85));
+                backdrop-filter: blur(10px);
+                z-index: 1000;
+                padding: 10px 20px;
+                box-shadow: 0 2px 15px rgba(0, 0, 0, 0.3);
+                border-bottom: 1px solid rgba(126, 224, 255, 0.2);
+            }
+            
+            .nav-list {
+                display: flex;
+                justify-content: center;
+                gap: 15px;
+                max-width: 1200px;
+                margin: 0 auto;
+                flex-wrap: wrap;
+            }
+            
+            .nav-item {
+                color: #e7fbff;
+                text-decoration: none;
+                padding: 10px 20px;
+                border-radius: 50px;
+                background: linear-gradient(135deg, rgba(16, 48, 70, 0.65), rgba(10, 30, 46, 0.55));
+                border: 1px solid rgba(126, 224, 255, 0.3);
+                transition: all 0.4s cubic-bezier(0.22, 1, 0.36, 1);
+                font-weight: 600;
+                font-size: 14px;
+                letter-spacing: 0.5px;
+                text-align: center;
+                min-width: 120px;
+            }
+            
+            .nav-item:hover:not(.active) {
+                background: linear-gradient(135deg, rgba(16, 48, 70, 0.9), rgba(10, 30, 46, 0.8));
+                transform: translateY(-2px);
+                box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+                color: #baf0ff;
+                border-color: rgba(126, 224, 255, 0.5);
+            }
+            
+            .nav-item.active {
+                background: linear-gradient(135deg, #ffd700, #00f0ff);
+                color: #05060a;
+                font-weight: 700;
+                border-color: #ffd700;
+                box-shadow: 0 0 20px rgba(255, 215, 0, 0.4);
+                cursor: default;
+            }
+            
+            /* Page transition */
+            .page-transition {
+                position: fixed;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                background: #05060a;
+                z-index: 2000;
+                opacity: 0;
+                pointer-events: none;
+                transition: opacity 0.5s ease-out;
+            }
+            
+            .page-transition.active {
+                opacity: 1;
+                pointer-events: all;
+            }
+        </style></head>
+<body><nav class="global-nav"><div class="nav-list"><a href="file:///home/shinehealthcare/Musik/Peace%20Diplomacy%20&amp;%20Technology%20%C2%B7%20EX2025D1218310%20%E2%80%94%20Daniel%20Pohl%20(Smooth%20Glide%20%C2%B7%20Fix%20v2)-Dateien/Peace%20Diplomacy%20&amp;%20Technology%20%C2%B7%20EX2025D1218310%20%E2%80%94%20Daniel%20Pohl%20(Certificate%20Edition).html" class="nav-item " data-page="certificate">Certificate Edition</a><a href="file:///home/shinehealthcare/Musik/Peace%20Diplomacy%20&amp;%20Technology%20%C2%B7%20EX2025D1218310%20%E2%80%94%20Daniel%20Pohl%20(Smooth%20Glide%20%C2%B7%20Fix%20v2)-Dateien/Peace%20Diplomacy%20&amp;%20Technology%20%C2%B7%20EX2025D1218310%20%E2%80%94%20Daniel%20Pohl%20(Complete%20Unified%20Edition).html" class="nav-item " data-page="complete">Complete Edition</a><a href="file:///home/shinehealthcare/Musik/Peace%20Diplomacy%20&amp;%20Technology%20%C2%B7%20EX2025D1218310%20%E2%80%94%20Daniel%20Pohl%20(Smooth%20Glide%20%C2%B7%20Fix%20v2)-Dateien/Peace%20Diplomacy%20&amp;%20Technology%20%C2%B7%20EX2025D1218310%20%E2%80%94%20Daniel%20Pohl%20(Smooth%20Glide%20%C2%B7%20Fix%20v2).html" class="nav-item " data-page="smooth-glide" style="">Smooth Glide</a><a href="file:///home/shinehealthcare/Musik/Peace%20Diplomacy%20&amp;%20Technology%20%C2%B7%20EX2025D1218310%20%E2%80%94%20Daniel%20Pohl%20(Smooth%20Glide%20%C2%B7%20Fix%20v2)-Dateien/Peace%20Diplomacy%20&amp;%20Technology%20%C2%B7%20EX2025D1218310%20%E2%80%94%20Daniel%20Pohl%20(Unified%20Multi-Level%20Edition).html" class="nav-item " data-page="unified" style="">Unified Multi-Level</a></div></nav>
+  <!-- Navigation will be injected here by navigation.js -->
+  <!-- Hintergründe -->
+  <canvas id="starfield" aria-hidden="true" style="position: fixed; inset: 0px; z-index: 0; pointer-events: none;" width="730" height="1294"></canvas>
+  <canvas id="fx" aria-hidden="true"></canvas>
+  <canvas id="matrix" aria-hidden="true" width="730" height="1294"></canvas>
+
+  <!-- Holografisches Emblem -->
+  <svg id="sigil" role="img" aria-label="Holografisches Emblem" viewBox="0 0 1024 1024">
+    <defs>
+      <radialGradient id="halo" cx="50%" cy="50%" r="50%">
+        <stop offset="0%" stop-color="rgba(0,255,255,.18)"></stop>
+        <stop offset="70%" stop-color="rgba(0,255,255,.08)"></stop>
+        <stop offset="100%" stop-color="rgba(0,0,0,0)"></stop>
+      </radialGradient>
+      <radialGradient id="haloGold" cx="50%" cy="50%" r="40%">
+        <stop offset="0%" stop-color="rgba(255,215,0,.18)"></stop>
+        <stop offset="70%" stop-color="rgba(255,215,0,.08)"></stop>
+        <stop offset="100%" stop-color="rgba(0,0,0,0)"></stop>
+      </radialGradient>
+    </defs>
+    <circle cx="512" cy="512" r="440" fill="url(#halo)"></circle>
+    <circle cx="512" cy="512" r="300" fill="url(#haloGold)" opacity=".55"></circle>
+    <g class="orb">
+      <circle class="holo gold goldGlow" cx="512" cy="512" r="420"></circle>
+      <circle class="holo dim" cx="512" cy="512" r="300"></circle>
+      <circle class="holo dim" cx="512" cy="512" r="220"></circle>
+    </g>
+    <g class="dash">
+      <circle class="holo strong gold goldGlow" cx="300" cy="430" r="46"></circle>
+      <g class="holo gold dim">
+        <path d="M300 368 l0 -26 M300 492 l0 -26 M242 430 l26 0 M384 430 l-26 0 M268 382 l18 18 M332 382 l-18 18 M332 478 l-18 -18 M268 478 l18 -18"></path>
+      </g>
+    </g>
+    <path class="holo dash" d="M732 420a64 64 0 1 1 -40 118a56 56 0 1 0 40 -118z"></path>
+    <g class="twinkle">
+      <polygon class="holo" points="512,210 526,244 563,244 533,266 545,302 512,282 479,302 491,266 461,244 498,244"></polygon>
+      <polygon class="holo" points="420,300 430,324 456,324 436,338 444,362 420,348 396,362 404,338 384,324 410,324"></polygon>
+      <polygon class="holo" points="606,300 616,324 642,324 622,338 630,362 606,348 582,362 590,338 570,324 596,324"></polygon>
+      <polygon class="holo" points="460,750 470,770 492,770 476,782 482,804 460,792 438,804 444,782 428,770 450,770"></polygon>
+      <polygon class="holo" points="664,700 674,720 696,720 680,732 686,754 664,742 642,754 648,732 632,720 654,720"></polygon>
+    </g>
+  </svg>
+
+  <div class="app">
+    <!-- Multi-Level Navigation -->
+    <header class="level-nav">
+      <div class="level-nav-inner">
+        <div class="brand">Peace Diplomacy &amp; Technology <small>Complete Unified Multi-Level Edition</small></div>
+        <nav class="level-tabs">
+          <button class="level-tab star-sparkle" onclick="switchLevel('work-base')">Work-Base-Infos</button>
+          <button class="level-tab star-sparkle" onclick="switchLevel('certificate')">Certificate Edition</button>
+          <button class="level-tab star-sparkle" onclick="switchLevel('smooth-glide')">Smooth Glide Fix v2</button>
+          <button class="level-tab star-sparkle" onclick="switchLevel('diagnostics')">Diagnostics &amp; Reports</button>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Main Content Area -->
+    <main>
+      <!-- Work-Base-Infos Level -->
+      <div id="work-base-content" class="level-content" style="display: block;">
+        <div class="section-nav">
+          <div class="section-nav-inner">
+            <div class="section-tabs">
+              <button class="section-tab star-sparkle active" onclick="showSection('overview')">Overview</button>
+              <button class="section-tab star-sparkle" onclick="showSection('expertise')">Expertise &amp; Vision</button>
+              <button class="section-tab star-sparkle" onclick="showSection('projects')">Active Projects</button>
+              <button class="section-tab star-sparkle" onclick="showSection('innovation')">Innovation Hub</button>
+              <button class="section-tab star-sparkle" onclick="switchLevel('certificate')">📜 Certificate</button>
+              <button class="section-tab star-sparkle" onclick="switchLevel('smooth-glide')">🚀 Smooth Glide</button>
+            </div>
+          </div>
+        </div>
+
+        <section id="overview" class="section-content">
+          <div class="hero">
+            <h1>Daniel Pohl</h1>
+            <p class="lead">EU‑UNION Expert · D‑U‑N‑S® 315676980 · PIC 873042778</p>
+            <div class="chips">
+              <span class="chip">EU‑UNION Ref.: <strong class="gold-highlight">EX2025D1218310</strong></span>
+              <span class="chip">VAT: <strong>31353063511</strong></span>
+              <span class="chip">ORCID: <strong>0009‑0004‑0348‑9769</strong></span>
+            </div>
+          </div>
+
+          <div class="grid">
+            <article class="card reveal">
+              <div class="hd"><h2>🌟 Welcome to Work-Base-Infos</h2></div>
+              <div class="bd">
+                <p>Welcome to the comprehensive Work-Base-Infos portal 
+of Daniel Pohl, EU‑UNION Expert and visionary leader in ethical 
+innovation, symbolic diplomacy, and sovereign digital infrastructure.</p>
+                
+                <div class="manifest-grid">
+                  <div>
+                    <h3>🎯 Mission Statement</h3>
+                    <p>Building bridges between technology, 
+spirituality, and peace through innovative solutions that serve 
+humanity's highest aspirations.</p>
+                  </div>
+                  <div>
+                    <h3>⚡ Core Focus Areas</h3>
+                    <ul>
+                      <li>Strategic Technological Innovation</li>
+                      <li>Interinstitutional Symbol Governance</li>
+                      <li>Trans‑European Ethical Integration</li>
+                      <li>Peacebuilding through Orbit‑Diplomacy</li>
+                    </ul>
+                  </div>
+                  <div>
+                    <h3>🏢 Organizations</h3>
+                    <p><strong>Founder &amp; CEO:</strong> Hnoss | PrismanTHarIOn | StarsLightsMovements</p>
+                    <p>A European movement for ethical innovation and spiritual responsibility.</p>
+                  </div>
+                  <div>
+                    <h3>📞 Connect</h3>
+                    <dl>
+                      <dt>Web</dt>
+                      <dd><a href="https://europea-un-world-lfx-peace-eu-gov-int.netlify.app/" target="_blank">europea-un-world-lfx-peace-eu-gov-int.netlify.app</a></dd>
+                      <dt>LinkedIn</dt>
+                      <dd>holythreekingstreecrowns</dd>
+                      <dt>Email</dt>
+                      <dd>statesflowwishes@outlook.ie</dd>
+                    </dl>
+                  </div>
+                </div>
+              </div>
+            </article>
+          </div>
+        </section>
+
+        <section id="expertise" class="section-content" style="display:none">
+          <div class="grid">
+            <article class="card reveal">
+              <div class="hd"><h2>🔬 Expertise &amp; Vision</h2></div>
+              <div class="bd">
+                <p><em>"Technology without ethics is power without direction. Innovation without compassion is progress without soul."</em></p>
+                
+                <div class="manifest-grid">
+                  <div>
+                    <h3>🧠 Technical Expertise</h3>
+                    <ul>
+                      <li>Decentralized AI Ethics &amp; Blockchain Policy</li>
+                      <li>Quantum Computing Applications</li>
+                      <li>Sustainable Digital Infrastructure</li>
+                      <li>Cross-Platform Integration Solutions</li>
+                    </ul>
+                  </div>
+                  <div>
+                    <h3>🕊️ Diplomatic Vision</h3>
+                    <ul>
+                      <li>Symbolic Diplomacy Frameworks</li>
+                      <li>Orbit‑Diplomacy Protocols</li>
+                      <li>Cultural Bridge-Building</li>
+                      <li>Conflict Resolution through Technology</li>
+                    </ul>
+                  </div>
+                  <div>
+                    <h3>🌱 Spiritual Foundation</h3>
+                    <p>Rooted in the tradition of the Holy Three Kings, 
+Saint Patrick, and the Dominican Order, my work integrates ancient 
+wisdom with cutting-edge innovation.</p>
+                  </div>
+                  <div>
+                    <h3>💪 Strength through Vulnerability</h3>
+                    <p>With 80% recognized disability, I work from inner
+ strength, knowing that true innovation comes from empathy and 
+understanding rather than perfection.</p>
+                  </div>
+                </div>
+              </div>
+            </article>
+          </div>
+        </section>
+
+        <section id="projects" class="section-content" style="display:none">
+          <div class="grid">
+            <article class="card reveal">
+              <div class="hd"><h2>🚀 Active Projects</h2></div>
+              <div class="bd">
+                <div class="manifest-grid">
+                  <div>
+                    <h3>WTHCOCHTW Framework</h3>
+                    <p><strong>Worldwide Technology &amp; Harmony Connections Orders</strong></p>
+                    <p>A recognition framework establishing new partnerships between technology, global culture, and human responsibility.</p>
+                  </div>
+                  <div>
+                    <h3>w1TcH.TrusT.w1zHL4zT Protocol</h3>
+                    <p><strong>Minimal Protocol for Intention, Integrity &amp; Impact</strong></p>
+                    <p>Three-gate system: Which (intention) → Trust (integrity) → WishLast (delivery)</p>
+                  </div>
+                  <div>
+                    <h3>Open-Shield-Zone</h3>
+                    <p><strong>Ethical Charter for Knowledge Integrity</strong></p>
+                    <p>Structured framework for responsible knowledge sharing with multi-level security protocols.</p>
+                  </div>
+                  <div>
+                    <h3>StarsLightsMovements</h3>
+                    <p><strong>Back2Future - Back2Reality Initiative</strong></p>
+                    <p>Connecting ancient wisdom with new technology for grounded solutions and cosmic perspective.</p>
+                  </div>
+                </div>
+              </div>
+            </article>
+          </div>
+        </section>
+
+        <section id="innovation" class="section-content" style="display:none">
+          <div class="grid">
+            <article class="card reveal">
+              <div class="hd"><h2>💡 Innovation Hub</h2></div>
+              <div class="bd">
+                <div class="manifest-grid">
+                  <div>
+                    <h3>🌟 The 7 Golden Suns Philosophy</h3>
+                    <div class="taglist">
+                      <span class="tag">☀️ 7 Goldene: Menschlichkeit</span>
+                      <span class="tag">☀️ 6 Heilige: Alchemie</span>
+                      <span class="tag">☀️ 5: Freiheit</span>
+                      <span class="tag">☀️ 4: Mitgefühl</span>
+                      <span class="tag">☀️ 3: Gemeinschaft</span>
+                      <span class="tag">☀️ 2: Vergebung</span>
+                      <span class="tag">☀️ 1: Wahrheit</span>
+                    </div>
+                  </div>
+                  <div>
+                    <h3>🎯 Innovation Principles</h3>
+                    <ul>
+                      <li><strong>Ethics over Efficiency:</strong> Every innovation serves life first, not market</li>
+                      <li><strong>Cooperation over Competition:</strong> Growth through resonance, not superiority</li>
+                      <li><strong>Transparency as Nobility:</strong> Openness replaces privilege</li>
+                      <li><strong>Knowledge as Wealth:</strong> Technology becomes bridge, not weapon</li>
+                    </ul>
+                  </div>
+                  <div>
+                    <h3>🔮 Future Vision: "Freezy Times"</h3>
+                    <p><em>"Cool denken, Cloud handeln."</em></p>
+                    <p>A vision where technology serves humanity, profit goes hand in hand with ethics, and innovation carries the seed of peace.</p>
+                  </div>
+                  <div>
+                    <h3>📊 Current Initiatives</h3>
+                    <div class="taglist">
+                      <span class="tag">STERNEN SINGER 2025</span>
+                      <span class="tag">StarsSync Gateways</span>
+                      <span class="tag">Peace Way Holder</span>
+                      <span class="tag">Lichter Wächter der Zeit</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </article>
+          </div>
+        </section>
+      </div>
+
+      <!-- Certificate Edition Level -->
+      <div id="certificate-content" class="level-content" style="display:none">
+        <div class="section-nav">
+          <div class="section-nav-inner">
+            <div class="section-tabs">
+              <button class="section-tab star-sparkle active" onclick="showSection('cert-overview')">Overview</button>
+              <button class="section-tab star-sparkle" onclick="showSection('cert-english')">Certificate (EN)</button>
+              <button class="section-tab star-sparkle" onclick="showSection('cert-german')">Zertifikat (DE)</button>
+              <button class="section-tab star-sparkle" onclick="showSection('cert-wthcochtw')">WTHCOCHTW</button>
+              <button class="section-tab star-sparkle" onclick="showSection('cert-protocol')">w1TcH Protocol</button>
+              <button class="section-tab star-sparkle" onclick="showSection('cert-ethos')">Ethos &amp; Lichtkodex</button>
+              <button class="section-tab star-sparkle" onclick="showSection('cert-open-shield')">Open-Shield-Zone</button>
+              <button class="section-tab star-sparkle" onclick="switchLevel('smooth-glide')">🚀 Smooth Glide</button>
+            </div>
+          </div>
+        </div>
+
+        <section id="cert-overview" class="section-content">
+          <div class="grid">
+            <article class="card reveal">
+              <div class="hd"><h2>🕊️ EU‑UNION‑COMMISSION | CERTIFICATE OF RECOGNITION</h2><div class="meta">Reference No.: EX2025D1218310 | D‑U‑N‑S Number: 315676980</div></div>
+              <div class="bd">
+                <p><strong>Issued: 5 August 2025 - Brussels / Strasbourg / Detmold</strong></p>
+                <p><strong>Official EU‑UN Summary (Overview)</strong></p>
+                
+                <dl>
+                  <dt>Name</dt>
+                  <dd><strong>Daniel Pohl</strong></dd>
+                  <dt>Official Correspondence Address</dt>
+                  <dd>Detmold, Germany</dd>
+                  <dt>Position</dt>
+                  <dd><strong class="gold-highlight">EU‑UNION Expert for Ethical Innovation, Symbolic Diplomacy &amp; Sovereign Digital Infrastructure</strong></dd>
+                  <dt>Recognized by</dt>
+                  <dd>EU‑UNION‑COMMISSION (<strong class="gold-highlight">EX2025D1218310</strong>)</dd>
+                </dl>
+              </div>
+            </article>
+          </div>
+        </section>
+
+        <!-- Additional Certificate sections will be added here... -->
+      </div>
+
+      <!-- Smooth Glide Level -->
+      <div id="smooth-glide-content" class="level-content" style="display:none">
+        <div class="section-nav">
+          <div class="section-nav-inner">
+            <div class="section-tabs">
+              <button class="section-tab star-sparkle active" onclick="showSection('smooth-overview')">Overview</button>
+              <button class="section-tab star-sparkle" onclick="showSection('smooth-performance')">Performance Monitor</button>
+              <button class="section-tab star-sparkle" onclick="showSection('smooth-effects')">Visual Effects</button>
+              <button class="section-tab star-sparkle" onclick="showSection('smooth-matrix')">Matrix Canvas</button>
+              <button class="section-tab star-sparkle" onclick="showSection('smooth-audio')">Audio System</button>
+              <button class="section-tab star-sparkle" onclick="switchLevel('certificate')">📜 Certificate</button>
+            </div>
+          </div>
+        </div>
+
+        <section id="smooth-overview" class="section-content">
+          <div class="grid">
+            <article class="card reveal">
+              <div class="hd"><h2>🚀 Smooth Glide Fix v2 - Performance Optimized Edition</h2></div>
+              <div class="bd">
+                <p>Advanced performance-optimized version with enhanced 
+visual effects, adaptive performance monitoring, and stable canvas 
+implementations.</p>
+                
+                <div class="manifest-grid">
+                  <div>
+                    <h3>⚡ Performance Features</h3>
+                    <ul>
+                      <li>Adaptive performance monitoring</li>
+                      <li>Dynamic quality adjustment</li>
+                      <li>Stable canvas implementations</li>
+                      <li>Optimized animation loops</li>
+                    </ul>
+                  </div>
+                  <div>
+                    <h3>🎨 Visual Enhancements</h3>
+                    <ul>
+                      <li>Enhanced matrix rain with multiple colors</li>
+                      <li>Interactive lightning effects</li>
+                      <li>Shooting star animations</li>
+                      <li>Audio-reactive visualizations</li>
+                    </ul>
+                  </div>
+                  <div>
+                    <h3>🔧 Technical Improvements</h3>
+                    <ul>
+                      <li>No blur/backdrop-filter usage</li>
+                      <li>Strictly valid CSS &amp; JavaScript</li>
+                      <li>Cross-browser compatibility</li>
+                      <li>Mobile-responsive design</li>
+                    </ul>
+                  </div>
+                  <div>
+                    <h3>🎵 Audio Integration</h3>
+                    <ul>
+                      <li>Click sound effects</li>
+                      <li>Connection crackle sounds</li>
+                      <li>Interactive audio feedback</li>
+                      <li>Console Easter eggs</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </article>
+          </div>
+        </section>
+
+        <!-- Additional Smooth Glide sections will be added here... -->
+      </div>
+
+      <!-- Diagnostics Level -->
+      <div id="diagnostics-content" class="level-content" style="display:none">
+        <div class="section-nav">
+          <div class="section-nav-inner">
+            <div class="section-tabs">
+              <button class="section-tab star-sparkle active" onclick="showSection('diag-system')">System Status</button>
+              <button class="section-tab star-sparkle" onclick="showSection('diag-performance')">Performance</button>
+              <button class="section-tab star-sparkle" onclick="showSection('diag-reports')">Reports &amp; Forms</button>
+              <button class="section-tab star-sparkle" onclick="showSection('diag-tools')">Developer Tools</button>
+              <button class="section-tab star-sparkle" onclick="switchLevel('work-base')">🏠 Home</button>
+            </div>
+          </div>
+        </div>
+
+        <section id="diag-system" class="section-content">
+          <div class="grid">
+            <article class="card reveal">
+              <div class="hd"><h2>📊 System Diagnostics &amp; Monitoring</h2></div>
+              <div class="bd">
+                <p>Real-time system monitoring and diagnostic tools for performance optimization and issue detection.</p>
+                
+                <div class="manifest-grid">
+                  <div>
+                    <h3>🖥️ System Status</h3>
+                    <dl>
+                      <dt>Canvas Rendering</dt>
+                      <dd><span class="gold-highlight">✓ Active</span></dd>
+                      <dt>Matrix Effects</dt>
+                      <dd><span class="gold-highlight">✓ Running</span></dd>
+                      <dt>Audio Context</dt>
+                      <dd><span class="gold-highlight">✓ Ready</span></dd>
+                      <dt>Performance Mode</dt>
+                      <dd><span class="gold-highlight">Adaptive</span></dd>
+                    </dl>
+                  </div>
+                  <div>
+                    <h3>📈 Performance Metrics</h3>
+                    <dl>
+                      <dt>Frame Rate</dt>
+                      <dd><span id="fps-counter">60 FPS</span></dd>
+                      <dt>Memory Usage</dt>
+                      <dd><span id="memory-usage">Normal</span></dd>
+                      <dt>Load Time</dt>
+                      <dd><span id="load-time">&lt; 2s</span></dd>
+                      <dt>Optimization</dt>
+                      <dd><span class="gold-highlight">Enabled</span></dd>
+                    </dl>
+                  </div>
+                  <div>
+                    <h3>🔧 Developer Tools</h3>
+                    <ul>
+                      <li>Console logging active</li>
+                      <li>Performance profiling</li>
+                      <li>Error tracking</li>
+                      <li>Debug mode available</li>
+                    </ul>
+                  </div>
+                  <div>
+                    <h3>🌐 Browser Support</h3>
+                    <ul>
+                      <li>Chrome/Chromium: ✓</li>
+                      <li>Firefox: ✓</li>
+                      <li>Safari: ✓</li>
+                      <li>Edge: ✓</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </article>
+          </div>
+        </section>
+
+        <!-- Additional Diagnostics sections will be added here... -->
+      </div>
+    </main>
+
+    <div class="scrollbar" id="scrollbar"></div>
+  </div>
+
+  <!-- JavaScript for Multi-Level Navigation -->
+  <script>
+    // Global state management
+    let currentLevel = 'work-base';
+    let currentSections = {
+      'work-base': 'overview',
+      'certificate': 'cert-overview', 
+      'smooth-glide': 'smooth-overview',
+      'diagnostics': 'diag-system'
+    };
+
+    // Switch between main levels
+    function switchLevel(level) {
+      // Hide all level contents
+      document.querySelectorAll('.level-content').forEach(content => {
+        content.style.display = 'none';
+      });
+      
+      // Show selected level
+      const levelContent = document.getElementById(level + '-content');
+      if (levelContent) {
+        levelContent.style.display = 'block';
+        currentLevel = level;
+        
+        // Update level tab states
+        document.querySelectorAll('.level-tab').forEach(tab => {
+          tab.classList.remove('active');
+        });
+        event.target.classList.add('active');
+        
+        // Show the current section for this level
+        showSection(currentSections[level]);
+        
+        // Trigger reveal animations
+        setTimeout(() => {
+          levelContent.querySelectorAll('.card').forEach(card => {
+            card.classList.add('reveal');
+          });
+        }, 100);
+      }
+    }
+
+    // Show sections within levels
+    function showSection(sectionId) {
+      // Hide all sections in current level
+      const currentLevelContent = document.getElementById(currentLevel + '-content');
+      if (currentLevelContent) {
+        currentLevelContent.querySelectorAll('.section-content').forEach(section => {
+          section.style.display = 'none';
+        });
+        
+        // Show selected section
+        const section = document.getElementById(sectionId);
+        if (section) {
+          section.style.display = 'block';
+          currentSections[currentLevel] = sectionId;
+          
+          // Update section tab states
+          currentLevelContent.querySelectorAll('.section-tab').forEach(tab => {
+            tab.classList.remove('active');
+          });
+          
+          // Find and activate the correct tab
+          const activeTab = currentLevelContent.querySelector(`[onclick="showSection('${sectionId}')"]`);
+          if (activeTab) {
+            activeTab.classList.add('active');
+          }
+          
+          // Trigger reveal animations
+          setTimeout(() => {
+            section.querySelectorAll('.card').forEach(card => {
+              card.classList.add('reveal');
+            });
+          }, 100);
+        }
+      }
+    }
+
+    // Initialize on page load
+    document.addEventListener('DOMContentLoaded', function() {
+      // Show initial level and section
+      switchLevel('work-base');
+      
+      // Initialize scroll progress
+      updateScrollProgress();
+      window.addEventListener('scroll', updateScrollProgress);
+      
+      // Initialize reveal animations
+      const observer = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('reveal');
+          }
+        });
+      }, { threshold: 0.1 });
+      
+      document.querySelectorAll('.card').forEach(card => {
+        observer.observe(card);
+      });
+    });
+
+    // Scroll progress bar
+    function updateScrollProgress() {
+      const scrollbar = document.getElementById('scrollbar');
+      const scrollTop = document.documentElement.scrollTop;
+      const scrollHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+      const progress = scrollHeight > 0 ? (scrollTop / scrollHeight) * 100 : 0;
+      scrollbar.style.width = progress + '%';
+    }
+
+    // Enhanced console logging
+    console.log('%c🌟 Complete Unified Edition Active', 'color: #00f0ff; font-size: 16px; font-weight: bold;');
+    console.log('%c✨ All Star-Sparkle Navigation Ready! ✨', 'color: #ffd700; font-size: 14px;');
+    console.log('%cRef: EX2025D1218310 | Multi-Level System Operational', 'color: #7ee0ff; font-size: 12px;');
+  </script>
+
+  <!-- Original Matrix Canvas Animation - Only Text Characters -->
+  <script>
+    (function(){
+      const canvas=document.getElementById('matrix');
+      if (!canvas) return;
+      
+      const ctx=canvas.getContext('2d');
+      let W,H,chars=[],running=true;
+      const matrixChars="ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789@#$%^&*()".split("");
+      
+      function resize(){
+        W=canvas.width=innerWidth;
+        H=canvas.height=innerHeight;
+        
+        const columns=Math.floor(W/20);
+        chars=[];
+        for(let i=0; i<columns; i++){
+          chars.push({
+            x:i*20,
+            y:Math.random()*H,
+            speed:2+Math.random()*8,
+            char:matrixChars[Math.floor(Math.random()*matrixChars.length)],
+            opacity:Math.random()
+          });
+        }
+      }
+      
+      function draw(){
+        if(!running) return;
+        
+        ctx.fillStyle='rgba(5,6,10,0.05)';
+        ctx.fillRect(0,0,W,H);
+        
+        ctx.font='14px monospace';
+        
+        for(let i=0; i<chars.length; i++){
+          const char=chars[i];
+          
+          ctx.fillStyle=`rgba(0,255,255,${char.opacity})`;
+          ctx.fillText(char.char, char.x, char.y);
+          
+          char.y+=char.speed;
+          char.opacity*=0.98;
+          
+          if(char.y>H || char.opacity<0.1){
+            char.y=-20;
+            char.x=Math.floor(Math.random()*(W/20))*20;
+            char.char=matrixChars[Math.floor(Math.random()*matrixChars.length)];
+            char.opacity=1;
+            char.speed=2+Math.random()*8;
+          }
+        }
+      }
+      
+      resize();
+      addEventListener('resize',resize);
+      
+      function loop(){
+        draw();
+        setTimeout(loop,80);
+      }
+      loop();
+      
+      document.addEventListener('visibilitychange',()=>{
+        running=!document.hidden;
+      });
+    })();
+  </script>
+
+  <!-- Starfield Animation -->
+  <script>
+    (() => {
+      const c = document.getElementById('starfield');
+      const ctx = c.getContext('2d');
+      let W, H, stars = [];
+    
+      function resize() {
+        W = c.width = innerWidth;
+        H = c.height = innerHeight;
+      }
+    
+      function createStars() {
+        const count = Math.min(1200, Math.max(250, Math.floor((innerWidth*innerHeight) / 4000)));
+        stars = new Array(count).fill(0).map(() => ({
+          x: Math.random() * W, y: Math.random() * H,
+          z: Math.random(),
+          r: 0.5 + Math.random() * 2,
+          t: Math.random() * Math.PI * 2
+        }));
+      }
+    
+      function drawStar(s, dt) {
+        s.t += dt;
+        const alpha = 0.7 + 0.3 * Math.sin(s.t);
+        
+        ctx.globalCompositeOperation = 'lighter';
+        ctx.beginPath();
+        ctx.fillStyle = `rgba(${Math.round(160 + Math.random()*50)},${Math.round(180 + Math.random()*40)},255,${alpha})`;
+        ctx.arc(s.x, s.y, s.r * (0.7 + s.z*0.8), 0, Math.PI*2);
+        ctx.fill();
+      }
+    
+      let last = performance.now();
+      function tick(now) {
+        const dt = Math.min(0.05, (now - last) / 1000); 
+        last = now;
+    
+        ctx.clearRect(0,0,W,H);
+    
+        const g = ctx.createRadialGradient(W/2, H/3, 0, W/2, H/3, Math.max(W,H));
+        g.addColorStop(0, 'rgba(20,15,35,1)');
+        g.addColorStop(1, 'rgba(5,4,15,1)');
+        ctx.fillStyle = g; 
+        ctx.fillRect(0,0,W,H);
+    
+        for (const s of stars) drawStar(s, dt);
+        requestAnimationFrame(tick);
+      }
+    
+      resize(); 
+      createStars(); 
+      addEventListener('resize', () => { resize(); createStars(); });
+      requestAnimationFrame(tick);
+    })();
+  </script>
+
+<div class="page-transition"></div></body></html>

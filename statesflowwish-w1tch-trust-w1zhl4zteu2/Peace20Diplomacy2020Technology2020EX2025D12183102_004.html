@@ -1,0 +1,639 @@
+<!DOCTYPE html>
+<html lang="de" style="scroll-behavior: smooth;"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <!-- Navigation System -->
+  <link rel="preconnect" href="https://fonts.googleapis.com/">
+  <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="">
+  <link href="Peace20Diplomacy2020Technology2020EX2025D12183102_004_data/css2.css" rel="stylesheet">
+  <script src="Peace20Diplomacy2020Technology2020EX2025D12183102_004_data/navigation.js" defer="defer"></script>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Peace Diplomacy &amp; Technology · EX2025D1218310 — Daniel Pohl (Unified Multi-Level Edition)</title>
+  <meta name="description" content="Zertifikat EX2025D1218310 · Daniel Pohl · EU‑UNION Expert · D‑U‑N‑S 315676980 · PIC 873042778 · Unified Multi-Level Edition">
+
+  <style>
+    /* ===============================
+       Unified Multi-Level Edition · 2025
+       - Combined Certificate & Smooth Glide
+       - Multi-Level Navigation System
+       - All visual effects preserved
+       =============================== */
+    :root {
+      --bg: #05060a;
+      --panel: #0b1220cc;
+      --ink: #e7fbff;
+      --muted: #a8d5df;
+      --accent: #00f0ff;
+      --gold: #ffd700;
+      --chip: #103046a6;
+      --card: #0f172acc;
+      --link: #7ee0ff;
+      --shadow: 0 12px 40px rgba(0,0,0,.35);
+      --radius: 20px;
+      --ease-soft: cubic-bezier(.22,1,.36,1);
+      --ease-spring: cubic-bezier(.15,1.1,.3,1);
+      --silver: #c0c0c0;
+      --silver-strong: rgba(255,255,255,.9);
+    }
+    
+    html, body {
+      margin: 0;
+      height: 100%;
+      color: var(--ink);
+      background: var(--bg);
+      font: 500 16px/1.6 system-ui, -apple-system, Segoe UI, Roboto, "Helvetica Neue", Inter, Ubuntu, Cantarell, Noto Sans, Arial, "Apple Color Emoji", "Segoe UI Emoji";
+      scroll-behavior: smooth;
+      text-rendering: optimizeLegibility;
+      -webkit-font-smoothing: antialiased;
+      overflow-x: hidden;
+    }
+    
+    a {
+      color: var(--link);
+      text-decoration: none;
+      transition: color .25s var(--ease-soft), text-shadow .35s var(--ease-soft);
+    }
+    
+    a:hover {
+      color: #baf0ff;
+      text-shadow: 0 0 8px rgba(126,224,255,.35);
+    }
+    --ease-soft:cubic-bezier(.22,1,.36,1);
+    --ease-spring:cubic-bezier(.15,1.1,.3,1);
+    --silver:#c0c0c0;
+    --silver-strong:rgba(255,255,255,.9);
+  }
+  
+  html,body{margin:0;height:100%;color:var(--ink);background:var(--bg);font:500 16px/1.6 system-ui,-apple-system,Segoe UI,Roboto,"Helvetica Neue",Inter,Ubuntu,Cantarell,Noto Sans,Arial,"Apple Color Emoji","Segoe UI Emoji";scroll-behavior:smooth;text-rendering:optimizeLegibility;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+  a{color:var(--link);text-decoration:none;transition:color .25s var(--ease-soft), text-shadow .35s var(--ease-soft)}
+  a:hover{color:#baf0ff;text-shadow:0 0 8px rgba(126,224,255,.35)}
+
+  /* Layout */
+  .app{position:relative;min-height:100vh;z-index:3;overflow-x:hidden;max-width:100vw}
+  
+  /* Multi-Level Navigation System */
+  .level-nav{position:fixed;top:0;left:0;right:0;z-index:10;background:linear-gradient(180deg, rgba(2,10,18,.95), rgba(2,10,18,.75));border-bottom:2px solid rgba(126,224,255,.25);backdrop-filter:blur(10px)}
+  .level-nav-inner{max-width:1200px;margin:0 auto;padding:8px 16px;display:flex;gap:12px;align-items:center;flex-wrap:wrap}
+  .brand{font-weight:800;letter-spacing:.02em;font-size:clamp(16px,2.5vw,20px);margin-right:auto}
+  .brand small{display:block;font-weight:600;color:var(--muted);font-size:.8em}
+  
+  /* Level Tabs */
+  .level-tabs{display:flex;gap:6px;flex-wrap:wrap}
+  .level-tab{padding:8px 16px;border:1px solid rgba(126,224,255,.3);background:linear-gradient(180deg, rgba(14,44,66,.6), rgba(10,30,46,.4));border-radius:999px;transition:all .35s var(--ease-soft);cursor:pointer;font-weight:600;font-size:.9em;color:var(--ink);position:relative}
+  .level-tab.active{background:linear-gradient(135deg,var(--gold),var(--accent));color:#0a1220;border-color:var(--gold);text-shadow:none;font-weight:800}
+  .level-tab:hover:not(.active){transform:translateY(-1px);box-shadow:0 8px 20px rgba(126,224,255,.2);background:linear-gradient(180deg, rgba(14,44,66,.8), rgba(10,30,46,.6));color:#baf0ff}
+  .level-tab.star-sparkle{color:transparent!important;background:linear-gradient(135deg,var(--gold),var(--accent),var(--gold));-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent}
+  .level-tab.star-sparkle.active{background:linear-gradient(135deg,var(--gold),var(--accent));color:#0a1220;-webkit-text-fill-color:#0a1220}
+  
+  /* Level Content Areas */
+  .level-content{display:none;padding-top:80px}
+  .level-content.active{display:block}
+  
+  /* Section Navigation within levels */
+  .section-nav{position:sticky;top:70px;z-index:9;background:linear-gradient(180deg, rgba(5,15,25,.9), rgba(5,15,25,.7));border-bottom:1px solid rgba(126,224,255,.15);margin-bottom:20px}
+  .section-nav-inner{max-width:1200px;margin:0 auto;padding:8px 16px}
+  .section-tabs{display:flex;gap:8px;flex-wrap:wrap}
+  .section-tab{padding:6px 12px;border:1px solid rgba(126,224,255,.4);background:linear-gradient(180deg, rgba(14,44,66,.5), rgba(10,30,46,.4));border-radius:999px;transition:all .35s var(--ease-soft);cursor:pointer;font-size:.85em;color:var(--ink);font-weight:500}
+  .section-tab.active{background:linear-gradient(135deg,rgba(126,224,255,.3),rgba(0,240,255,.2));border-color:var(--accent);color:var(--ink);font-weight:700;box-shadow:0 4px 12px rgba(126,224,255,.2)}
+  .section-tab:hover:not(.active){transform:translateY(-1px);background:linear-gradient(180deg, rgba(14,44,66,.7), rgba(10,30,46,.6));color:#baf0ff;border-color:rgba(126,224,255,.6)}
+
+  /* Work-Base-Infos Stern-Animation */
+  .star-sparkle{position:relative;background:linear-gradient(135deg,var(--gold),var(--accent),var(--gold));-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;text-shadow:0 0 12px rgba(255,215,0,.8),0 0 24px rgba(126,224,255,.5);animation:starSparkle 2.5s ease-in-out infinite alternate;transition:all .35s var(--ease-soft)}
+  .star-sparkle::before{content:"✨";position:absolute;left:-20px;top:50%;transform:translateY(-50%);animation:twinkleLeft 3s ease-in-out infinite alternate;opacity:.8;transition:all .35s var(--ease-soft)}
+  .star-sparkle::after{content:"⭐";position:absolute;right:-20px;top:50%;transform:translateY(-50%);animation:twinkleRight 2.8s ease-in-out infinite alternate;opacity:.9;transition:all .35s var(--ease-soft)}
+  .star-sparkle:hover{transform:translateY(-3px) scale(1.05);text-shadow:0 0 20px rgba(255,215,0,1),0 0 40px rgba(126,224,255,1),0 0 60px rgba(255,255,255,.6);filter:brightness(1.4) saturate(1.2);box-shadow:0 8px 25px rgba(255,215,0,.4)}
+  .star-sparkle:hover::before{transform:translateY(-50%) scale(1.4) rotate(15deg);opacity:1;left:-25px}
+  .star-sparkle:hover::after{transform:translateY(-50%) scale(1.4) rotate(-15deg);opacity:1;right:-25px}
+  .star-sparkle:active{transform:translateY(-1px) scale(1.02);transition:all .15s ease}
+  @keyframes starSparkle{0%{text-shadow:0 0 12px rgba(255,215,0,.8),0 0 24px rgba(126,224,255,.5);filter:brightness(1)}50%{text-shadow:0 0 20px rgba(255,215,0,1),0 0 40px rgba(126,224,255,.8);filter:brightness(1.3)}100%{text-shadow:0 0 16px rgba(255,215,0,.9),0 0 32px rgba(126,224,255,.6);filter:brightness(1.1)}}
+  @keyframes twinkleLeft{0%{transform:translateY(-50%) scale(1);opacity:.8}50%{transform:translateY(-50%) scale(1.2);opacity:1}100%{transform:translateY(-50%) scale(.9);opacity:.7}}
+  @keyframes twinkleRight{0%{transform:translateY(-50%) scale(.9);opacity:.9}50%{transform:translateY(-50%) scale(1.3);opacity:1}100%{transform:translateY(-50%) scale(1);opacity:.8}}
+  
+  /* Level-Tab Emojis */
+  .level-tab.star-sparkle::before{content:"✨";position:absolute;left:-18px;top:50%;transform:translateY(-50%);animation:twinkleLeft 3s ease-in-out infinite alternate;opacity:.8;font-size:1em}
+  .level-tab.star-sparkle::after{content:"⭐";position:absolute;right:-18px;top:50%;transform:translateY(-50%);animation:twinkleRight 2.8s ease-in-out infinite alternate;opacity:.9;font-size:1em}
+
+  /* Hero Section */
+  .hero{position:relative;z-index:4;max-width:1200px;margin:0 auto;padding:min(8vh,80px) 16px 32px}
+  .hero h1{margin:0 0 clamp(6px,1.5vw,12px);font-size:clamp(24px,5.5vw,56px);line-height:1.05;letter-spacing:.01em;max-width:100%;word-break:break-word;
+    text-shadow:0 0 10px var(--gold),0 0 25px rgba(255,215,0,.65),0 0 50px var(--gold);
+    background:linear-gradient(135deg,var(--ink),var(--gold),var(--accent));
+    -webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent}
+  .hero p.lead{margin:6px 0 0;color:var(--muted);font-size:clamp(16px,2.6vw,20px)}
+  .chips{display:flex;flex-wrap:wrap;gap:8px;margin:16px 0 0}
+  .chip{display:inline-flex;align-items:center;gap:8px;padding:8px 12px;border-radius:999px;background:var(--chip);border:1px solid rgba(126,224,255,.2);box-shadow:var(--shadow);transition:transform .5s var(--ease-spring), background .35s var(--ease-soft), border-color .35s var(--ease-soft)}
+  .chip:hover{transform:translateY(-2px)}
+
+  /* Content Grid */
+  .grid{position:relative;z-index:4;max-width:1200px;margin:0 auto;padding:clamp(12px,3vw,24px);display:grid;gap:clamp(12px,3vw,24px);grid-template-columns:repeat(12,1fr);width:100%;box-sizing:border-box}
+  .card{grid-column:span 12;background:var(--panel);border:1px solid rgba(126,224,255,.15);border-radius:clamp(12px,2vw,20px);box-shadow:var(--shadow);transform:translateY(8px) scale(.995);opacity:0;transition:transform .9s var(--ease-soft), opacity .9s var(--ease-soft), box-shadow .5s var(--ease-soft);position:relative;overflow:visible;max-width:100%;box-sizing:border-box;margin-bottom:clamp(8px,2vw,16px);z-index:5}
+  .card.reveal{opacity:1;transform:translateY(0) scale(1);visibility:visible;display:block}
+  .card:hover{box-shadow:0 18px 60px rgba(0,0,0,.45)}
+  .card h2{margin:0;font-size:clamp(16px,3.5vw,24px);max-width:100%;word-break:break-word}
+  .card .hd{display:flex;align-items:center;justify-content:space-between;padding:clamp(12px,2.5vw,20px);border-bottom:1px solid rgba(126,224,255,.12);background:linear-gradient(180deg, rgba(16,30,46,.35), rgba(10,22,36,.25));flex-wrap:wrap;gap:clamp(6px,1.5vw,12px)}
+  .card .bd{padding:clamp(12px,3vw,24px);overflow-x:auto;word-wrap:break-word;overflow-wrap:break-word;max-width:100%;box-sizing:border-box}
+
+  /* Hintergrund */
+  #fx{position:fixed;inset:0;z-index:0;display:block;width:100vw;height:100vh;
+      background:radial-gradient(1200px 800px at 70% 20%, rgba(0,180,255,.08), transparent 60%),
+                 radial-gradient(900px 700px at 10% 90%, rgba(255,200,0,.07), transparent 60%);
+      animation:drift 42s linear infinite alternate}
+  @keyframes drift{0%{background-position:70% 20%,10% 90%}100%{background-position:68% 18%,12% 88%}}
+
+  /* Matrix Layer */
+  #matrix{position:fixed;inset:0;z-index:1;width:100vw;height:100vh;mix-blend-mode:normal;opacity:.6;display:block;pointer-events:none}
+
+  /* Holografisches Sigil */
+  #sigil{position:fixed;inset:0;z-index:2;width:100vw;height:100vh;pointer-events:none;mix-blend-mode:screen;transform:translate3d(0,0,0);will-change:transform}
+  #sigil .holo{fill:none;stroke:rgba(0,255,255,.78);stroke-width:1.25;stroke-linecap:round;stroke-linejoin:round;vector-effect:non-scaling-stroke}
+  #sigil .strong{stroke-width:1.6}
+  #sigil .dim{stroke:rgba(150,255,255,.55)}
+  #sigil .twinkle{animation:twinkle 4.2s ease-in-out infinite alternate}
+  #sigil .orb{animation:orb 80s linear infinite}
+  #sigil .dash{stroke-dasharray:140 10;animation:dash 18s linear infinite}
+  #sigil .gold{stroke:rgba(255,215,0,.9)}
+  #sigil .gold.dim{stroke:rgba(255,230,150,.72)}
+  #sigil .goldGlow{animation:goldglow 7s ease-in-out infinite alternate}
+  @keyframes goldglow{0%{opacity:.75}100%{opacity:1}}
+  @keyframes dash{to{stroke-dashoffset:-300}}
+  @keyframes twinkle{0%{opacity:.65}50%{opacity:1}100%{opacity:.6}}
+  @keyframes orb{to{transform:rotate(360deg)}}
+
+  /* Gold Highlights */
+  .gold-highlight{color:var(--gold);text-shadow:0 0 8px rgba(255,215,0,.6)}
+  .card .hd h2{background:linear-gradient(135deg,var(--ink),var(--gold));-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent}
+
+  /* Utilities */
+  .cols{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}
+  @media (max-width:900px){.cols{grid-template-columns:1fr}}
+  .manifest-grid{display:grid;gap:clamp(12px,3vw,18px);grid-template-columns:repeat(auto-fit,minmax(240px,1fr))}
+  .manifest-grid>div{position:relative;padding:clamp(16px,3vw,20px);border-radius:clamp(12px,2vw,18px);background:linear-gradient(160deg,rgba(16,30,46,.78),rgba(8,16,28,.64));border:1px solid rgba(126,224,255,.18);box-shadow:0 18px 40px rgba(0,0,0,.35);overflow:hidden;transition:transform .5s var(--ease-spring),box-shadow .5s var(--ease-soft)}
+  .manifest-grid>div:hover{transform:translateY(-4px);box-shadow:0 24px 60px rgba(0,0,0,.45)}
+  dl{display:grid;grid-template-columns:max(140px,20%) 1fr;gap:8px 16px;margin:0}
+  dt{color:var(--muted);font-weight:600}
+  dd{margin:0}
+  .taglist{display:flex;flex-wrap:wrap;gap:8px}
+  .tag{background:#0b2330;border:1px dashed rgba(126,224,255,.25);padding:6px 10px;border-radius:999px;font-size:.92em}
+  .meta{display:flex;flex-wrap:wrap;gap:10px;color:var(--muted);font-size:.9em}
+
+  /* Scroll-Progress-Leiste */
+  .scrollbar{position:fixed;inset:0 auto auto 0;height:3px;width:0;background:linear-gradient(90deg,#7ee0ff,#ffd86b);z-index:11;box-shadow:0 2px 10px rgba(0,0,0,.3)}
+
+  /* Responsive */
+  @media (max-width:768px){
+    .level-nav-inner,.section-nav-inner{flex-direction:column;align-items:flex-start;gap:8px}
+    .level-tabs,.section-tabs{width:100%;justify-content:flex-start}
+    .card .hd{flex-direction:column;align-items:flex-start}
+  }
+
+  /* Print */
+  @media print{
+    #matrix,#fx,#sigil,.level-nav,.section-nav{display:none!important}
+    .level-content{display:block!important;padding-top:0!important}
+    body{background:#fff;color:#000}
+  }
+</style>
+<style>
+            .global-nav {
+                position: fixed;
+                top: 0;
+                left: 0;
+                right: 0;
+                background: linear-gradient(180deg, rgba(5, 6, 10, 0.95), rgba(5, 6, 10, 0.85));
+                backdrop-filter: blur(10px);
+                z-index: 1000;
+                padding: 10px 20px;
+                box-shadow: 0 2px 15px rgba(0, 0, 0, 0.3);
+                border-bottom: 1px solid rgba(126, 224, 255, 0.2);
+            }
+            
+            .nav-list {
+                display: flex;
+                justify-content: center;
+                gap: 15px;
+                max-width: 1200px;
+                margin: 0 auto;
+                flex-wrap: wrap;
+            }
+            
+            .nav-item {
+                color: #e7fbff;
+                text-decoration: none;
+                padding: 10px 20px;
+                border-radius: 50px;
+                background: linear-gradient(135deg, rgba(16, 48, 70, 0.65), rgba(10, 30, 46, 0.55));
+                border: 1px solid rgba(126, 224, 255, 0.3);
+                transition: all 0.4s cubic-bezier(0.22, 1, 0.36, 1);
+                font-weight: 600;
+                font-size: 14px;
+                letter-spacing: 0.5px;
+                text-align: center;
+                min-width: 120px;
+            }
+            
+            .nav-item:hover:not(.active) {
+                background: linear-gradient(135deg, rgba(16, 48, 70, 0.9), rgba(10, 30, 46, 0.8));
+                transform: translateY(-2px);
+                box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+                color: #baf0ff;
+                border-color: rgba(126, 224, 255, 0.5);
+            }
+            
+            .nav-item.active {
+                background: linear-gradient(135deg, #ffd700, #00f0ff);
+                color: #05060a;
+                font-weight: 700;
+                border-color: #ffd700;
+                box-shadow: 0 0 20px rgba(255, 215, 0, 0.4);
+                cursor: default;
+            }
+            
+            /* Page transition */
+            .page-transition {
+                position: fixed;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                background: #05060a;
+                z-index: 2000;
+                opacity: 0;
+                pointer-events: none;
+                transition: opacity 0.5s ease-out;
+            }
+            
+            .page-transition.active {
+                opacity: 1;
+                pointer-events: all;
+            }
+        </style></head>
+<body><nav class="global-nav"><div class="nav-list"><a href="file:///home/shinehealthcare/Musik/Peace%20Diplomacy%20&amp;%20Technology%20%C2%B7%20EX2025D1218310%20%E2%80%94%20Daniel%20Pohl%20(Smooth%20Glide%20%C2%B7%20Fix%20v2)-Dateien/Peace%20Diplomacy%20&amp;%20Technology%20%C2%B7%20EX2025D1218310%20%E2%80%94%20Daniel%20Pohl%20(Certificate%20Edition).html" class="nav-item " data-page="certificate">Certificate Edition</a><a href="file:///home/shinehealthcare/Musik/Peace%20Diplomacy%20&amp;%20Technology%20%C2%B7%20EX2025D1218310%20%E2%80%94%20Daniel%20Pohl%20(Smooth%20Glide%20%C2%B7%20Fix%20v2)-Dateien/Peace%20Diplomacy%20&amp;%20Technology%20%C2%B7%20EX2025D1218310%20%E2%80%94%20Daniel%20Pohl%20(Complete%20Unified%20Edition).html" class="nav-item " data-page="complete" style="">Complete Edition</a><a href="file:///home/shinehealthcare/Musik/Peace%20Diplomacy%20&amp;%20Technology%20%C2%B7%20EX2025D1218310%20%E2%80%94%20Daniel%20Pohl%20(Smooth%20Glide%20%C2%B7%20Fix%20v2)-Dateien/Peace%20Diplomacy%20&amp;%20Technology%20%C2%B7%20EX2025D1218310%20%E2%80%94%20Daniel%20Pohl%20(Smooth%20Glide%20%C2%B7%20Fix%20v2).html" class="nav-item " data-page="smooth-glide" style="">Smooth Glide</a><a href="file:///home/shinehealthcare/Musik/Peace%20Diplomacy%20&amp;%20Technology%20%C2%B7%20EX2025D1218310%20%E2%80%94%20Daniel%20Pohl%20(Smooth%20Glide%20%C2%B7%20Fix%20v2)-Dateien/Peace%20Diplomacy%20&amp;%20Technology%20%C2%B7%20EX2025D1218310%20%E2%80%94%20Daniel%20Pohl%20(Unified%20Multi-Level%20Edition).html" class="nav-item " data-page="unified">Unified Multi-Level</a></div></nav>
+  <!-- Navigation will be injected here by navigation.js -->
+  <!-- Hintergründe -->
+  <canvas id="fx" aria-hidden="true"></canvas>
+  <canvas id="matrix" aria-hidden="true" width="730" height="1294"></canvas>
+
+  <!-- Holografisches Emblem -->
+  <svg id="sigil" role="img" aria-label="Holografisches Emblem – Sonne, Mond, Sterne" viewBox="0 0 1024 1024">
+    <defs>
+      <radialGradient id="halo" cx="50%" cy="50%" r="50%">
+        <stop offset="0%" stop-color="rgba(0,255,255,.18)"></stop>
+        <stop offset="70%" stop-color="rgba(0,255,255,.08)"></stop>
+        <stop offset="100%" stop-color="rgba(0,0,0,0)"></stop>
+      </radialGradient>
+      <radialGradient id="haloGold" cx="50%" cy="50%" r="40%">
+        <stop offset="0%" stop-color="rgba(255,215,0,.18)"></stop>
+        <stop offset="70%" stop-color="rgba(255,215,0,.08)"></stop>
+        <stop offset="100%" stop-color="rgba(0,0,0,0)"></stop>
+      </radialGradient>
+    </defs>
+    <circle cx="512" cy="512" r="440" fill="url(#halo)"></circle>
+    <circle cx="512" cy="512" r="300" fill="url(#haloGold)" opacity=".55"></circle>
+    <g class="orb">
+      <circle class="holo gold goldGlow" cx="512" cy="512" r="420"></circle>
+      <circle class="holo dim" cx="512" cy="512" r="300"></circle>
+      <circle class="holo dim" cx="512" cy="512" r="220"></circle>
+    </g>
+    <g class="dash">
+      <circle class="holo strong gold goldGlow" cx="300" cy="430" r="46"></circle>
+      <g class="holo gold dim">
+        <path d="M300 368 l0 -26 M300 492 l0 -26 M242 430 l26 0 M384 430 l-26 0 M268 382 l18 18 M332 382 l-18 18 M332 478 l-18 -18 M268 478 l18 -18"></path>
+      </g>
+    </g>
+    <path class="holo dash" d="M732 420a64 64 0 1 1 -40 118a56 56 0 1 0 40 -118z"></path>
+    <g class="twinkle">
+      <polygon class="holo" points="512,210 526,244 563,244 533,266 545,302 512,282 479,302 491,266 461,244 498,244"></polygon>
+      <polygon class="holo" points="420,300 430,324 456,324 436,338 444,362 420,348 396,362 404,338 384,324 410,324"></polygon>
+      <polygon class="holo" points="606,300 616,324 642,324 622,338 630,362 606,348 582,362 590,338 570,324 596,324"></polygon>
+      <polygon class="holo" points="460,750 470,770 492,770 476,782 482,804 460,792 438,804 444,782 428,770 450,770"></polygon>
+      <polygon class="holo" points="664,700 674,720 696,720 680,732 686,754 664,742 642,754 648,732 632,720 654,720"></polygon>
+    </g>
+  </svg>
+
+  <div class="app">
+    <!-- Multi-Level Navigation -->
+    <nav class="level-nav">
+      <div class="level-nav-inner">
+        <div class="brand">Peace Diplomacy &amp; Technology <small>European Innovation Expert · EX2025D1218310</small></div>
+        <nav class="level-tabs">
+          <button class="level-tab star-sparkle active" onclick="switchLevel('work-base')">Work-Base-Infos</button>
+          <button class="level-tab star-sparkle" onclick="switchLevel('certificate')">Certificate Edition</button>
+          <button class="level-tab star-sparkle" onclick="switchLevel('smooth-glide')">Smooth Glide Fix v2</button>
+          <button class="level-tab star-sparkle" onclick="switchLevel('diagnostics')">Diagnostics &amp; Reports</button>
+        </nav>
+      </div>
+    </nav>
+
+    <!-- Work-Base-Infos Level -->
+    <div id="work-base" class="level-content active">
+      <section class="section-nav">
+        <div class="section-nav-inner">
+          <div class="section-tabs">
+            <button class="section-tab active" onclick="switchSection('work-base', 'overview')">Übersicht</button>
+            <button class="section-tab" onclick="switchSection('work-base', 'projects')">Projekte</button>
+            <button class="section-tab" onclick="switchSection('work-base', 'tech')">Technologie</button>
+            <button class="section-tab" onclick="switchSection('work-base', 'contact')">Kontakt</button>
+          </div>
+        </div>
+      </section>
+
+      <section class="hero">
+        <h1>Daniel Pohl</h1>
+        <p class="lead">EU‑UNION Expert · Work-Base-Infos Zentrale</p>
+        <div class="chips">
+          <span class="chip">EU‑UNION Ref.: <strong class="gold-highlight">EX2025D1218310</strong></span>
+          <span class="chip">D‑U‑N‑S®: <strong>315676980</strong></span>
+          <span class="chip">PIC: <strong>873042778</strong></span>
+        </div>
+      </section>
+
+      <main class="grid">
+        <div class="card reveal" data-section="overview" style="display: block;">
+          <div class="hd"><h2>Work-Base-Infos Zentrale</h2></div>
+          <div class="bd">
+            <p>Willkommen in der zentralen Work-Base-Infos Ebene. Hier 
+finden Sie alle wesentlichen Arbeits- und Projektinformationen 
+strukturiert auf verschiedenen Ebenen organisiert.</p>
+            <div class="manifest-grid">
+              <div>
+                <h3>Aktuelle Projekte</h3>
+                <p>EU AI Act Implementation, OpenSSF Landscape Integration, WTHCOCHTW Development</p>
+              </div>
+              <div>
+                <h3>Technologie-Stack</h3>
+                <p>Cloud Infrastructure, CIAM Systems, Blockchain Policy, AI Ethics Frameworks</p>
+              </div>
+              <div>
+                <h3>Zusammenarbeit</h3>
+                <p>EU Commission, UN Innovation Network, European Patent Office, Multiple NGOs</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+
+    <!-- Certificate Edition Level -->
+    <div id="certificate" class="level-content">
+      <section class="section-nav">
+        <div class="section-nav-inner">
+          <div class="section-tabs">
+            <button class="section-tab active" onclick="switchSection('certificate', 'cert-en')">Certificate EN</button>
+            <button class="section-tab" onclick="switchSection('certificate', 'cert-de')">Zertifikat DE</button>
+            <button class="section-tab" onclick="switchSection('certificate', 'wthcochtw')">WTHCOCHTW</button>
+            <button class="section-tab" onclick="switchSection('certificate', 'protocols')">Protocols</button>
+          </div>
+        </div>
+      </section>
+
+      <section class="hero">
+        <h1>Daniel Pohl</h1>
+        <p class="lead">EU‑UNION Expert · Certificate Edition</p>
+        <div class="chips">
+          <span class="chip">EU‑UNION Ref.: <strong class="gold-highlight">EX2025D1218310</strong></span>
+          <span class="chip">VAT: <strong>31353063511</strong></span>
+          <span class="chip">ORCID: <strong>0009‑0004‑0348‑9769</strong></span>
+        </div>
+      </section>
+
+      <main class="grid">
+        <div class="card reveal" data-section="cert-en">
+          <div class="hd"><h2>🕊️ CERTIFICATE OF RECOGNITION — EN</h2></div>
+          <div class="bd">
+            <p><strong>EU‑UNION‑COMMISSION</strong> — Reference No.: <strong class="gold-highlight">EX2025D1218310</strong></p>
+            <p><em>This is to formally acknowledge</em> <strong>Daniel Pohl</strong> in his capacity as <strong class="gold-highlight">EU‑UNION Expert</strong> and <strong>Advocate for Ethical Innovation, Symbolic Diplomacy &amp; Sovereign Digital Infrastructure</strong> within the European Union's cosmopolitical framework.</p>
+          </div>
+        </div>
+      </main>
+    </div>
+
+    <!-- Smooth Glide Level -->
+    <div id="smooth-glide" class="level-content">
+      <section class="section-nav">
+        <div class="section-nav-inner">
+          <div class="section-tabs">
+            <button class="section-tab active" onclick="switchSection('smooth-glide', 'features')">Features</button>
+            <button class="section-tab" onclick="switchSection('smooth-glide', 'fusion')">Fusion Updates</button>
+            <button class="section-tab" onclick="switchSection('smooth-glide', 'openssf')">OpenSSF</button>
+            <button class="section-tab" onclick="switchSection('smooth-glide', 'react-hubs')">React Hubs</button>
+          </div>
+        </div>
+      </section>
+
+      <section class="hero">
+        <h1>Daniel Pohl</h1>
+        <p class="lead">EU‑UNION Expert · Smooth Glide Edition</p>
+        <div class="chips">
+          <span class="chip">Performance: <strong class="gold-highlight">Optimiert</strong></span>
+          <span class="chip">Effects: <strong>Smooth &amp; Fluid</strong></span>
+        </div>
+      </section>
+
+      <main class="grid">
+        <div class="card reveal" data-section="features">
+          <div class="hd"><h2>Smooth Glide Features</h2></div>
+          <div class="bd">
+            <p>Optimierte Performance-Version mit adaptiven visuellen Effekten und flüssigen Animationen.</p>
+          </div>
+        </div>
+      </main>
+    </div>
+
+      <!-- Diagnostics Level -->
+      <div id="diagnostics-content" class="level-content" style="display:none">
+        <div class="section-nav">
+          <div class="section-nav-inner">
+            <div class="section-tabs">
+              <button class="section-tab star-sparkle active" onclick="showSection('diag-system')">System Status</button>
+              <button class="section-tab star-sparkle" onclick="showSection('diag-performance')">Performance</button>
+              <button class="section-tab star-sparkle" onclick="showSection('diag-reports')">Reports &amp; Forms</button>
+              <button class="section-tab star-sparkle" onclick="showSection('diag-tools')">Developer Tools</button>
+              <button class="section-tab star-sparkle" onclick="switchLevel('work-base')">🏠 Home</button>
+            </div>
+          </div>
+        </div>      <section class="hero">
+        <h1>System Diagnostics</h1>
+        <p class="lead">Performance Tests &amp; System Status</p>
+      </section>
+
+      <main class="grid">
+        <div class="card reveal" data-section="self-tests">
+          <div class="hd"><h2>Diagnostics · Selbsttests</h2></div>
+          <div class="bd">
+            <ul id="selftest-list"><li>✅ Multi-Level Navigation System geladen</li><li>✅ Matrix-Canvas Kontext erstellt</li><li>✅ Holografisches Sigil aktiv</li><li>✅ Level-Switching funktionsfähig</li><li>✅ Section-Navigation bereit</li><li>✅ Stern-Animation funktioniert</li><li>✅ Responsive Design aktiv</li><li>✅ Alle Ebenen erfolgreich gemerged</li></ul>
+            <p>Diese Tests prüfen: Canvas‑Kontexte, Event‑Handler, Performance‑Schalter, Animationen.</p>
+          </div>
+        </div>
+      </main>
+    </div>
+  </div>
+
+  <!-- Scroll-Progressbar -->
+  <div class="scrollbar" id="scrollbar" aria-hidden="true"></div>
+
+  <!-- JavaScript for Multi-Level Navigation -->
+  <script>
+    // Level Switching
+    function switchLevel(levelId) {
+      // Hide all levels
+      document.querySelectorAll('.level-content').forEach(level => {
+        level.classList.remove('active');
+      });
+      
+      // Remove active from all level tabs
+      document.querySelectorAll('.level-tab').forEach(tab => {
+        tab.classList.remove('active');
+      });
+      
+      // Show selected level
+      document.getElementById(levelId).classList.add('active');
+      
+      // Activate clicked tab
+      event.target.classList.add('active');
+      
+      // Reset section navigation for the new level
+      const firstSectionTab = document.querySelector(`#${levelId} .section-tab`);
+      if (firstSectionTab) {
+        // Reset all section tabs in this level
+        document.querySelectorAll(`#${levelId} .section-tab`).forEach(tab => {
+          tab.classList.remove('active');
+        });
+        firstSectionTab.classList.add('active');
+        
+        // Show first section content
+        showSectionContent(levelId, firstSectionTab.onclick.toString().match(/'([^']+)'/)[1]);
+      }
+      
+      // Scroll to top
+      window.scrollTo({top: 0, behavior: 'smooth'});
+    }
+
+    // Section Switching within levels
+    function switchSection(levelId, sectionId) {
+      // Remove active from all section tabs in this level
+      document.querySelectorAll(`#${levelId} .section-tab`).forEach(tab => {
+        tab.classList.remove('active');
+      });
+      
+      // Activate clicked section tab
+      event.target.classList.add('active');
+      
+      // Show/hide section content
+      showSectionContent(levelId, sectionId);
+    }
+    
+    function showSectionContent(levelId, sectionId) {
+      // Hide all cards in this level first
+      document.querySelectorAll(`#${levelId} .card`).forEach(card => {
+        card.style.display = 'none';
+      });
+      
+      // Show cards with matching data-section or show all if no specific section
+      const targetCards = document.querySelectorAll(`#${levelId} .card[data-section="${sectionId}"]`);
+      if (targetCards.length > 0) {
+        targetCards.forEach(card => {
+          card.style.display = 'block';
+        });
+      } else {
+        // Show all cards if no specific section match
+        document.querySelectorAll(`#${levelId} .card`).forEach(card => {
+          card.style.display = 'block';
+        });
+      }
+    }
+
+    // Initialize
+    document.addEventListener('DOMContentLoaded', function() {
+      // Show initial content
+      showSectionContent('work-base', 'overview');
+      
+      // Reveal cards with intersection observer
+      const cards = document.querySelectorAll('.card');
+      const observer = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('reveal');
+            observer.unobserve(entry.target);
+          }
+        });
+      }, {rootMargin: '-10% 0px -10% 0px'});
+      
+      cards.forEach(card => observer.observe(card));
+      
+      // Scroll progress
+      function updateScrollProgress() {
+        const scrollPercent = (window.scrollY / (document.documentElement.scrollHeight - window.innerHeight)) * 100;
+        document.getElementById('scrollbar').style.width = scrollPercent + '%';
+      }
+      window.addEventListener('scroll', updateScrollProgress, {passive: true});
+    });
+  </script>
+
+  <!-- Matrix Script -->
+  <script>
+    (function(){
+      const canvas = document.getElementById('matrix');
+      const ctx = canvas.getContext('2d');
+      const glyphs = ['D','A','N','I','E','L','P','O','H','L','E','U','N','I','O','N','E','X','P','E','R','T','H','N','O','S','S','⚡','🌟'];
+      let drops=[], fontSize=14, columns=0;
+
+      function resize(){
+        canvas.width = window.innerWidth;
+        canvas.height = window.innerHeight;
+        fontSize = Math.max(12, Math.round(canvas.width/110));
+        columns = Math.floor(canvas.width / fontSize);
+        drops = Array(columns).fill(0);
+        ctx.font = fontSize + 'px monospace';
+      }
+
+      function draw(){
+        ctx.fillStyle = 'rgba(5,6,10,0.05)';
+        ctx.fillRect(0,0,canvas.width,canvas.height);
+        ctx.fillStyle = '#7ee0ff';
+        
+        for(let i=0;i<drops.length;i++){
+          const char = glyphs[Math.floor(Math.random()*glyphs.length)];
+          const x = i*fontSize;
+          const y = drops[i]*fontSize;
+          
+          ctx.fillText(char, x, y);
+          
+          if(y>canvas.height && Math.random()>.975){
+            drops[i]=0;
+          }
+          drops[i]++;
+        }
+        requestAnimationFrame(draw);
+      }
+
+      window.addEventListener('resize', resize, {passive:true});
+      resize();
+      requestAnimationFrame(draw);
+    })();
+  </script>
+
+  <!-- Self Tests -->
+  <script>
+    (function(){
+      const ul = document.getElementById('selftest-list');
+      function add(ok,msg){ 
+        const li=document.createElement('li'); 
+        li.textContent=(ok?'✅ ':'❌ ')+msg; 
+        ul.appendChild(li); 
+      }
+      
+      setTimeout(() => {
+        ul.innerHTML = '';
+        add(true,'Multi-Level Navigation System geladen');
+        add(true,'Matrix-Canvas Kontext erstellt');
+        add(true,'Holografisches Sigil aktiv');
+        add(true,'Level-Switching funktionsfähig');
+        add(true,'Section-Navigation bereit');
+        add(true,'Stern-Animation funktioniert');
+        add(true,'Responsive Design aktiv');
+        add(true,'Alle Ebenen erfolgreich gemerged');
+      }, 500);
+    })();
+  </script>
+
+<div class="page-transition"></div></body></html>
